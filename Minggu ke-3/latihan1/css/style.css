@@ -1,0 +1,36 @@
+body {
+    font-family: 'Lato';
+    overflow-x: hidden;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.img-sosmed img {
+    width: 40px;
+}
+
+.nav-link {
+    color: coral !important;
+}
+
+.carousel-inner img {
+    height: 600px;
+}
+
+.carousel-caption h5 {
+    font-size: 30px;
+}
+
+.carousel-caption p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.branding span {
+    width: fit-content;
+    background-color: #FF3300;
+    color: #FFFFFF;
+    padding: 6px;
+}
