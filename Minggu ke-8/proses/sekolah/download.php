@@ -2,8 +2,6 @@
 include '../../conf.php';
 include '../../conn.php';
 
-use Dompdf\Dompdf;
-
 ob_start();
 $hasil = $koneksi->prepare("SELECT * FROM sekolah WHERE id = '" . get('id') . "'");
 $hasil->execute();
@@ -16,7 +14,7 @@ $data = $hasil->fetch(PDO::FETCH_OBJ);
 <h3><?php echo $data->alamat; ?></h3>
 <?php
 $html = ob_get_clean();
-$dompdf = new Dompdf();
+$dompdf = new Dompdf\Dompdf();
 $dompdf->loadHtml($html);
 $dompdf->setPaper('A4', 'landscape');
 $dompdf->render();
