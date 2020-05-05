@@ -13,7 +13,7 @@
     <?php
     if (isset($_GET['pesan'])) {
         if ($_GET['pesan'] == "gagal") {
-            echo "<div class='alert alert-danger' role='alert'>Login gagal</div>";
+            echo "<div class='alert alert-danger' role='alert'>Username atau Password Salah</div>";
         } else if ($_GET['pesan'] == "logout") {
             echo "<div class='alert alert-success' role='alert'>Berhasil Logout</div>";
         } else if ($_GET['pesan'] == "belum_login") {
