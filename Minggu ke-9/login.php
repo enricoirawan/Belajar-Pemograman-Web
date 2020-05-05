@@ -19,7 +19,7 @@ $cek = mysqli_num_rows($user);
 if ($cek > 0) {
     $_SESSION['username'] = $username;
     $_SESSION['status'] = "login";
-    header("location:admin/index.php");
+    header("location:sekolah/index.php");
 } else {
     header("location:index.php?pesan=gagal");
 }
