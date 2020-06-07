@@ -1,0 +1,1 @@
+REST API saya hanya GET dan Delete saja pak hehe
